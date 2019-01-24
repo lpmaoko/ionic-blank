@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color ="danger">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <button ion-button (click) ="showMenu()" full outline>Menu</button>  
+
+  <ion-fab bottom right>
+    <button ion-fab color="primary">
+      <ion-icon name="arrow-dropleft"></ion-icon>
+    </button>
+    <ion-fab-list side="left">
+      <button ion-fab color="green">
+        <ion-icon name="logo-whatsapp" ></ion-icon>
+      </button>
+      <button ion-fab >
+          <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button>
+      <button ion-fab (click)="onBuy()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
